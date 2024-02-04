@@ -6,7 +6,7 @@
 /*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 23:19:43 by gcavanna          #+#    #+#             */
-/*   Updated: 2024/02/03 23:45:43 by gcavanna         ###   ########.fr       */
+/*   Updated: 2024/02/03 23:54:53 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,9 @@ int main()
         std::cout << "Shortest Span: " << sp.shortestSpan() << std::endl;
         std::cout << "Longest Span: " << sp.longestSpan() << std::endl;
 
-        // Aggiunta di più numeri in una singola chiamata
         int additionalNumbers[] = {2, 15, 7};
         sp.addNumbers(additionalNumbers, additionalNumbers + sizeof(additionalNumbers) / sizeof(additionalNumbers[0]));
 
-        // Output dei risultati dopo l'aggiunta di più numeri
         std::cout << "Shortest Span after adding more numbers: " << sp.shortestSpan() << std::endl;
         std::cout << "Longest Span after adding more numbers: " << sp.longestSpan() << std::endl;
     }
