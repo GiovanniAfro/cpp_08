@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 19:02:19 by gcavanna          #+#    #+#             */
-/*   Updated: 2024/02/03 23:39:27 by gcavanna         ###   ########.fr       */
+/*   Updated: 2024/02/05 15:00:16 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <limits>
 
 class Span
 {

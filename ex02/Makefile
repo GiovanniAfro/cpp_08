@@ -3,14 +3,14 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+         #
+#    By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/01 13:50:09 by gcavanna          #+#    #+#              #
-#    Updated: 2024/02/04 00:00:25 by gcavanna         ###   ########.fr        #
+#    Updated: 2024/02/05 15:00:58 by gcavanna         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Span
+NAME = Mutant
 
 SRC = main.cpp
 CC = c++
