@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Span.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gcavanna <gcavanna@student.42firenze.it    +#+  +:+       +#+        */
+/*   By: gcavanna <gcavanna@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 19:02:24 by gcavanna          #+#    #+#             */
-/*   Updated: 2024/02/03 23:39:53 by gcavanna         ###   ########.fr       */
+/*   Updated: 2024/02/05 14:55:42 by gcavanna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,6 +71,10 @@ int Span::longestSpan() const
     if (_numbers.size() < 2)
         throw std::runtime_error("Not enough numbers to calculate span");
     
-    std::pair<std::vector<int>::const_iterator, std::vector<int>::const_iterator> result = std::minmax_element(_numbers.begin(), _numbers.end());
-    return *result.second - *result.first;
+    std::vector<int>::const_iterator minElement = std::min_element(_numbers.begin(), _numbers.end());
+    std::vector<int>::const_iterator maxElement = std::max_element(_numbers.begin(), _numbers.end());
+
+    int span = *maxElement - *minElement;
+
+    return span;
 }
